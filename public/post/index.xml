@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Meshariblog</title>
-    <link>/post/</link>
+    <link>http://example.com/post/</link>
     <description>Recent content in Posts on Meshariblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Visualization</title>
-      <link>/post/data-visualization/</link>
+      <link>http://example.com/post/data-visualization/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/data-visualization/</guid>
+      <guid>http://example.com/post/data-visualization/</guid>
       <description>library(sqldf)library(ggplot2)library(Lahman)There will be times while we working in Data Science where you will want to vizualize the output of Data in Class, we worked on making scatter plots in Rstudio, running a query searching for players with at least 400 career homeruns.
 query&amp;lt;-&amp;quot;SELECT playerID,sum(HR) AS career_HR ,sum(SO) AS career_SOFROM BattingGROUP BY playerIDHAVING sum(HR)&amp;gt;=400&amp;quot;result&amp;lt;-sqldf(query)ggplot()+geom_point(data=result,aes(x=career_SO,y=career_HR), size=3, color=&amp;quot;green&amp;quot;)+ggtitle(&amp;quot;Career Strikeouts vs. Homeruns for Great Hitter&amp;quot;)+xlab(&amp;quot;Career Strikeouts&amp;quot;)+ylab(&amp;quot;Career Homeruns&amp;quot;)</description>
     </item>
