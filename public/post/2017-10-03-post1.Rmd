@@ -1,0 +1,36 @@
+---
+title: Post1
+author: ''
+date: '2017-10-03'
+slug: post1
+categories: []
+tags: []
+---
+
+# Barplots
+
+```{r}
+library(Lahman)
+library(sqldf)
+library(ggplot2)
+```
+
+Here is how to make a barplot
+```{r}
+query<-"SELECT name,HR 
+FROM Teams
+WHERE yearID=1980
+ORDER BY HR"
+
+result<-sqldf(query)
+
+result$name<-factor(result$name,levels=result$name)
+ggplot()+
+  geom_bar(data=result,aes(x=name,y=HR),stat='identity',color="black",fill="green")+
+  coord_flip()+
+  xlab("Teams")+
+  ylab("Homerun")+
+  ggtitle("Team Homeruns in 1980")
+
+```
+
