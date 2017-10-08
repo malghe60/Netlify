@@ -19,6 +19,16 @@
   </url>
   
   <url>
+    <loc>http://example.com/post/histotgram/</loc>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/time-series/</loc>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.com/post/post1/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url>
@@ -75,13 +85,13 @@
   
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://example.com/post/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

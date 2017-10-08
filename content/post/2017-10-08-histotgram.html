@@ -1,16 +1,14 @@
 ---
-title: Bar Plots
+title: Histotgram
 author: ''
-date: '2017-10-03'
-slug: post1
+date: '2017-10-08'
+slug: histotgram
 categories: []
 tags: []
 ---
 
 
 
-<div id="barplots" class="section level1">
-<h1>Barplots</h1>
 <pre class="r"><code>library(Lahman)
 library(sqldf)</code></pre>
 <pre><code>## Loading required package: gsubfn</code></pre>
@@ -22,20 +20,18 @@ library(sqldf)</code></pre>
 <pre><code>## Could not load tcltk.  Will use slower R code instead.</code></pre>
 <pre><code>## Loading required package: RSQLite</code></pre>
 <pre class="r"><code>library(ggplot2)</code></pre>
-<p>Here is how to make a barplot</p>
-<pre class="r"><code>query&lt;-&quot;SELECT name,HR 
-FROM Teams
-WHERE yearID=1980
-ORDER BY HR&quot;
+<p>A histogram is a visual data display using one column of data. in this code down, we ran a query looking for player weight from the Master table.</p>
+<pre class="r"><code># extracting the data--------------------------------------
+
+query&lt;-&quot;SELECT weight
+FROM Master&quot;
 
 result&lt;-sqldf(query)
 
-result$name&lt;-factor(result$name,levels=result$name)
+# visualizint the date-------------------------------------
+
 ggplot()+
-  geom_bar(data=result,aes(x=name,y=HR),stat=&#39;identity&#39;,color=&quot;black&quot;,fill=&quot;green&quot;)+
-  coord_flip()+
-  xlab(&quot;Teams&quot;)+
-  ylab(&quot;Homerun&quot;)+
-  ggtitle(&quot;Team Homeruns in 1980&quot;)</code></pre>
-<p><img src="/post/2017-10-03-post1_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-</div>
+  geom_histogram(data=result,aes(x=weight),color=&quot;white&quot;,fill=&quot;black&quot;,bins=50)+
+  ggtitle(&quot;Body-Weight Distribution for Baseball Players&quot;)</code></pre>
+<pre><code>## Warning: Removed 854 rows containing non-finite values (stat_bin).</code></pre>
+<p><img src="/post/2017-10-08-histotgram_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>

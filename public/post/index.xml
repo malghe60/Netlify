@@ -6,13 +6,31 @@
     <description>Recent content in Posts on Meshariblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Post1</title>
+      <title>Histotgram</title>
+      <link>http://example.com/post/histotgram/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/histotgram/</guid>
+      <description>library(Lahman) library(sqldf) ## Loading required package: gsubfn ## Loading required package: proto ## Warning in doTryCatch(return(expr), name, parentenv, handler): unable to load shared object &amp;#39;/Library/Frameworks/R.framework/Resources/modules//R_X11.so&amp;#39;: ## dlopen(/Library/Frameworks/R.framework/Resources/modules//R_X11.so, 6): Library not loaded: /opt/X11/lib/libSM.6.dylib ## Referenced from: /Library/Frameworks/R.framework/Resources/modules//R_X11.so ## Reason: image not found ## Could not load tcltk. Will use slower R code instead. ## Loading required package: RSQLite library(ggplot2) A histogram is a visual data display using one column of data. in this code down, we ran a query looking for player weight from the Master table.</description>
+    </item>
+    
+    <item>
+      <title>Time series </title>
+      <link>http://example.com/post/time-series/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/time-series/</guid>
+      <description>library(Lahman) library(sqldf) ## Loading required package: gsubfn ## Loading required package: proto ## Warning in doTryCatch(return(expr), name, parentenv, handler): unable to load shared object &amp;#39;/Library/Frameworks/R.framework/Resources/modules//R_X11.so&amp;#39;: ## dlopen(/Library/Frameworks/R.framework/Resources/modules//R_X11.so, 6): Library not loaded: /opt/X11/lib/libSM.6.dylib ## Referenced from: /Library/Frameworks/R.framework/Resources/modules//R_X11.so ## Reason: image not found ## Could not load tcltk. Will use slower R code instead. ## Loading required package: RSQLite library(ggplot2) Time Series are somewhat similiar to scatter plots in the sense that you can get points on the graph, whatever, the major point that you are looking at these trends over time.</description>
+    </item>
+    
+    <item>
+      <title>Bar Plots</title>
       <link>http://example.com/post/post1/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
