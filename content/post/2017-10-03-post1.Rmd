@@ -1,5 +1,5 @@
 ---
-title: Post1
+title: Bar Plots
 author: ''
 date: '2017-10-03'
 slug: post1

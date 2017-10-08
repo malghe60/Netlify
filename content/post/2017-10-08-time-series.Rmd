@@ -1,0 +1,34 @@
+---
+title: 'Time series '
+author: ''
+date: '2017-10-08'
+slug: time-series
+categories: []
+tags: []
+---
+
+```{r}
+library(Lahman)
+library(sqldf)
+library(ggplot2)
+```
+Time Series are somewhat similiar to scatter plots in the sense that you can get points on the graph, whatever, the major point that you are looking at these trends over time. the way to equate this to something familiar would be looking at a graph for trends of the particular stock, whether the value rise up or goes down over time with a line showing that trend.
+```{r}
+# extracting the data---------------------------
+
+query<-"SELECT yearID,HR
+FROM Batting 
+WHERE playerID='ruthba01'"
+
+result<-sqldf(query)
+
+# creating a time series------------------------
+
+ggplot()+
+  #geom_point(data=result,aes(x=yearID,y=HR))+
+  geom_line(data=result,aes(x=yearID,y=HR),size=1)+
+  ggtitle("Ruth's Homerun Totals Throughout the Years")+
+  xlab("Year")+
+  ylab("Homeruns")
+```
+
